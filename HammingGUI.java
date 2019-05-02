@@ -144,10 +144,10 @@ public class HammingGUI extends JFrame //implements MouseListener
 		
 		stationButton = new JButton("Add Station");
 		stationButton.addActionListener((e) -> {
-			expandDropDownList(newStationName.getText().substring(0, 4));
+			expandDropDownList(newStationName.getText().substring(0, newStationName.getText().length()));
 		});
 		newStationName = new JTextField(6);
-		newStationName.setText("ZERO");
+		//newStationName.setText("ZERO");
 		
 		
 		
@@ -311,7 +311,11 @@ public class HammingGUI extends JFrame //implements MouseListener
         	tempArr[i] = IDlist.get(i);
         }
 		IDlistArr = tempArr;
+		dropDownBox.addItem(str);
 		dropDownBox = new JComboBox(IDlistArr);
+		//add(dropDownBox, layoutConst);
+		//dropDownBox.addItem(str);
+		
 	}
 	
 	public void HammedSliderStations(String str)
@@ -368,10 +372,10 @@ public class HammingGUI extends JFrame //implements MouseListener
 		HamDistFour=0;
 	}
 	
-	public void actionPerformed(ActionEvent e) {
+	/*public void actionPerformed(ActionEvent e) {
         JComboBox cb = (JComboBox)e.getSource();
         dropDownCode = (String)cb.getSelectedItem();
-	}
+	}*/
 	
 	public static void main(String[] args)
 	{

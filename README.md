@@ -25,11 +25,10 @@ stated above was simply recylced from project1
 purpose is to sync up the topmost textbox with the number that the 
 slider displays. It is only one line of code, but it does work.
 
-8. Next is a method called expandDropDownList. Note that this method 
-does NOT work, but if it was implemented properly, it was supposed to 
-react to the the add station button was pressed and add the content of 
-the textbox right next to it into he dropdown bar, hence the name 
-expandDropDownList.
+8. Next is a method called expandDropDownList. This method is called 
+when the add station button is pressed and the textbox right next to it 
+has a String. The said String is inserted at the end of the dropDown 
+Bar, increasing its size by one, hence the name expandDropDownList.
 
 9. The next method is called HammedSliderStations. This method receives 
 the currently selected ID from the dropdown bar and displays all of the 
